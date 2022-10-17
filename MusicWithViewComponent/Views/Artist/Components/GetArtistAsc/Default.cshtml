@@ -1,0 +1,10 @@
+﻿
+@model IEnumerable<MusicWithViewComponent.Models.Artist>
+
+    @foreach(var artist in Model)
+    {
+        <div style="margin: 20px">
+            <h1>@artist.Name</h1>
+            <p>@artist.Category</p>
+        </div>
+    }
